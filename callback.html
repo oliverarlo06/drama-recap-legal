@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connecting to DramaRecap dashboard</title>
+<script>
+/* TikTok OAuth bounce: forward code+state to the local Postiz instance */
+(function () {
+  var target = 'http://localhost:4007/integrations/social/tiktok';
+  location.replace(target + location.search);
+})();
+</script>
+</head>
+<body style="font-family: system-ui, sans-serif; padding: 40px;">
+<h1>Connecting&hellip;</h1>
+<p>If you are not redirected automatically, <a id="lnk" href="#">click here</a>.</p>
+<script>document.getElementById("lnk").href = "http://localhost:4007/integrations/social/tiktok" + location.search;</script>
+</body>
+</html>
